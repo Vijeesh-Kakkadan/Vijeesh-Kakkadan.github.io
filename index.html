@@ -1,51 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background: #24292e;
-            color: white;
-            padding: 20px;
-        }
-        section {
-            margin: 40px;
-        }
-        footer {
-            margin-top: 40px;
-            padding: 10px;
-            background: #ddd;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijeesh Kakkadan | Portfolio</title>
+  <meta name="description" content="Portfolio of Vijeesh Kakkadan. IT Support, Systems, Networking, DevOps learning, and projects." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">VK</a>
 
-<header>
-    <h1>Welcome to My Website</h1>
-    <p>Hosted using GitHub Pages</p>
-</header>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
 
-<section>
-    <h2>About Me</h2>
-    <p>Hello, I am Vijeesh. This is my first GitHub Pages website.</p>
-</section>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
 
-<section>
-    <h2>Projects</h2>
-    <p>More projects coming soon.</p>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Open to opportunities</p>
+          <h1>Hi, I’m <span class="accent">Vijeesh</span>.</h1>
+          <p class="subtitle">
+            IT Support Specialist building skills in systems, networking, and DevOps.
+            I like solving problems, improving processes, and learning fast.
+          </p>
 
-<footer>
-    <p>© 2026 Vijeesh</p>
-</footer>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
 
+          <div class="links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span class="dot">•</span>
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <span class="dot">•</span>
+            <a href="#" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="card hero-card">
+          <h2 class="card-title">Quick Info</h2>
+          <ul class="info">
+            <li><span>Location</span><b>Basildon, Essex (UK)</b></li>
+            <li><span>Focus</span><b>IT Support, Systems, Networking, DevOps</b></li>
+            <li><span>Strengths</span><b>Troubleshooting, customer support, documentation</b></li>
+          </ul>
+          <p class="small">
+            Tip: Replace the links above with your real GitHub and LinkedIn URLs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead">
+          I’m an IT Support Specialist with a strong interest in building a long term career in systems and cloud.
+          I’ve worked in customer-facing environments and I enjoy structured problem-solving, incident handling, and clear communication.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What I do</h3>
+            <ul class="bullets">
+              <li>Help users resolve hardware, software, and account issues.</li>
+              <li>Document fixes and follow processes for incident reporting.</li>
+              <li>Learn and practice Linux, networking fundamentals, and cloud basics.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>What I’m learning</h3>
+            <ul class="bullets">
+              <li>DevOps basics: Git, CI/CD, containers.</li>
+              <li>AWS fundamentals.</li>
+              <li>Improving scripts and automation with Python.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="lead">A snapshot of tools and areas I work with.</p>
+
+        <div class="chips">
+          <span class="chip">IT Support</span>
+          <span class="chip">Troubleshooting</span>
+          <span class="chip">Incident Handling</span>
+          <span class="chip">Customer Service</span>
+          <span class="chip">Networking Basics</span>
+          <span class="chip">Linux Basics</span>
+          <span class="chip">Python (basic)</span>
+          <span class="chip">Git (basic)</span>
+          <span class="chip">Documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="lead">A few things I’ve built or worked on. Replace these with your real links.</p>
+
+        <div class="projects">
+          <article class="card project">
+            <h3>Phishing URL Detection (ML)</h3>
+            <p>
+              Built a cloud-based phishing URL detection system using ML/DL approaches, feature extraction, and evaluation.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>ML</span><span>Security</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
+              <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>IoT Weather Monitoring (ESP8266)</h3>
+            <p>
+              Real time sensor integration with microcontroller and basic prediction workflow.
+            </p>
+            <div class="project-tags">
+              <span>IoT</span><span>ESP8266</span><span>Arduino</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Project Notes</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>PLC, SCADA, HMI Training Work</h3>
+            <p>
+              Siemens PLC and HMI training projects including basic automation logic and simulations.
+            </p>
+            <div class="project-tags">
+              <span>PLC</span><span>SCADA</span><span>HMI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Summary</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Fastest way to reach me is email.</p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Message</h3>
+            <form class="form" action="mailto:vijeeshkakkadan@gmail.com" method="post" enctype="text/plain">
+              <label>
+                Your name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Your email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="What can I help with?" required></textarea>
+              </label>
+              <button class="btn" type="submit">Send</button>
+              <p class="small">
+                This opens your email app. If you want a real contact form (no email app), tell me and I’ll set up a free Formspree option.
+              </p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Details</h3>
+            <ul class="info">
+              <li><span>Email</span><b>vijeeshkakkadan@gmail.com</b></li>
+              <li><span>GitHub</span><b>github.com/your-username</b></li>
+              <li><span>LinkedIn</span><b>linkedin.com/in/your-handle</b></li>
+            </ul>
+            <p class="small">
+              Update these links so recruiters can click straight through.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vijeesh Kakkadan</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
